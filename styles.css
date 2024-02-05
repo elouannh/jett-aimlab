@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+body {
+    background-color: #252525;
+    color: white;
+    font-family: "Inter";
+}
+
 h1 {
     color: red;
+    font-size: 200%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    width: 75vw;
+    margin: 75px auto auto;
 }
