@@ -2,11 +2,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jett AimLab</title>
-    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="public/styles.css" type="text/css" rel="stylesheet">
     <link href="assets/favicon.png" type="image/x-icon" rel="icon">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Jett AimLab</title>
     <meta name="description" content="Tu veux train ton aim ? Eh bien, c'est pas ici que tu le feras, mais au moins y a Jett.">
+    <script src="public/script.js" defer></script>
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 4800,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -17,5 +27,41 @@
         <a href="https://youtu.be/qiyMuFQWdDA">Let me cook</a>
     </div>
     <p id="scores"></p>
+    <div id="settings-container"><span id="settings" class="material-symbols-outlined">settings</span></div>
+    <div id="settings-blur">
+        <div id="settings-form-container">
+            <form>
+                <label class="form-title" for="text">Message personnalisé</label><br>
+                <input type="text" id="text" name="text" placeholder="Regardez ça !"><br>
+
+                <p class="form-title">Taille de la cible</p>
+                <label for="radio">Small</label><br>
+                <input type="radio" id="radio" name="radio"><br>
+                <label for="radio">Medium</label><br>
+                <input type="radio" id="radio" name="radio"><br>
+                <label for="radio">Large</label><br>
+                <input type="radio" id="radio" name="radio"><br>
+
+                <p class="form-title">Effets sonores</p>
+                <label for="checkbox">Cibles touchée</label><br>
+                <input type="checkbox" id="checkbox" name="checkbox"><br>
+                <label for="checkbox">Cible manquée</label><br>
+                <input type="checkbox" id="checkbox" name="checkbox"><br>
+                <label for="checkbox">Ace</label><br>
+                <input type="checkbox" id="checkbox" name="checkbox"><br>
+
+                <label class="form-title" for="color">Couleur cible</label><br>
+                <input type="color" id="color" name="color"><br>
+
+                <label class="form-title" for="file">Fond d'écran</label><br>
+                <input type="file" id="file" name="file"><br>
+
+                <label class="form-title" for="range">Lenteur (0s-1s)</label><br>
+                <input type="range" id="range" name="range"><br>
+
+                <input type="submit" id="submit" name="submit"><br>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
